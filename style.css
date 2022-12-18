@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(44, 42, 42);
+}
+.contianer{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    height: 600px;
+    width: 500px ;
+    margin: 4%;
+}
+.card{
+    height: 90px;
+    width: 80px;
+    display: flex;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    background-color: cyan;
+    cursor: pointer;
+    transition: 0.4s all ease;
+}
+.card img{
+    height: 50px;
+    width: 50px;
+    opacity: 0;
+    transition: 0.4s all ease;
+}
+.card.clicked{
+    background-color: orangered;
+}
+.card.clicked  img{
+    opacity: 1;
+}
+.card.checked{
+    background-color: lightgreen;
+}
+.card.checked img{
+    opacity: 1;
+}
